@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(../imgs/pattern-background-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+}
+@media (max-width: 768px) {
+  body {
+    background-image: url(../imgs/pattern-background-mobile.svg);
+  }
+}
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  max-width: 450px;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .card {
+    min-width: 330px;
+  }
+}
+.card header img {
+  max-width: 100%;
+}
+.card > .text {
+  padding: 50px;
+}
+@media (max-width: 768px) {
+  .card > .text {
+    padding: 20px;
+  }
+}
+.card > .text section h1 {
+  font-weight: 900;
+}
+.card > .text section p {
+  margin-top: 20px;
+  color: hsl(224, 23%, 55%);
+}
+.card > .text nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: hsl(225, 100%, 98%);
+  padding: 20px;
+  border-radius: 15px;
+  align-items: center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.card > .text nav .box {
+  text-align: left;
+  display: flex;
+}
+.card > .text nav .box > .text {
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  .card > .text nav .box > .text {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+}
+.card > .text nav img {
+  align-self: center;
+}
+.card > .text nav p {
+  color: hsl(224, 23%, 55%);
+}
+.card > .text nav a {
+  color: hsl(245, 75%, 52%);
+}
+.card > .text nav a:hover {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%, 0.8);
+}
+.card > .text footer .proceed {
+  display: block;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 20px;
+  text-decoration: none;
+  box-shadow: 0 11px 20px hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+.card > .text footer .proceed:hover {
+  background-color: hsl(245, 75%, 52%, 0.7);
+}
+.card > .text footer .cancel {
+  display: block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+.card > .text footer .cancel:hover {
+  color: black;
+}
